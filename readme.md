@@ -13,12 +13,17 @@ Documentation for the framework can be found on the [Lumen website](https://lume
 
 ## Requirements
 
-PHP >= 7.1.3, OpenSSL PHP Extension, PDO PHP Extension, Mbstring PHP Extension, Curl PHP Extension
+PHP >= 7.1.3, OpenSSL PHP Extension, PDO PHP Extension, Mbstring PHP Extension, Curl PHP Extension, Composer
 
 
 ## Installation and configuration
 
 Clone the repository and set all important variables in ".env". An example settings file can be found in ".env.example"
+
+Next use
+```
+composer install
+```
 
 ## Usage
 ![DEMO](./demo.gif)
