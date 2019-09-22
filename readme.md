@@ -1,21 +1,24 @@
-# Lumen PHP Framework
-
+#  mateuszjanczak/lastfm
 [![Build Status](https://travis-ci.org/laravel/lumen-framework.svg)](https://travis-ci.org/laravel/lumen-framework)
 [![Total Downloads](https://poser.pugx.org/laravel/lumen-framework/d/total.svg)](https://packagist.org/packages/laravel/lumen-framework)
 [![Latest Stable Version](https://poser.pugx.org/laravel/lumen-framework/v/stable.svg)](https://packagist.org/packages/laravel/lumen-framework)
 [![Latest Unstable Version](https://poser.pugx.org/laravel/lumen-framework/v/unstable.svg)](https://packagist.org/packages/laravel/lumen-framework)
 [![License](https://poser.pugx.org/laravel/lumen-framework/license.svg)](https://packagist.org/packages/laravel/lumen-framework)
 
-Laravel Lumen is a stunningly fast PHP micro-framework for building web applications with expressive, elegant syntax. We believe development must be an enjoyable, creative experience to be truly fulfilling. Lumen attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as routing, database abstraction, queueing, and caching.
+This app showing recent information from last.fm such as scrobbles, recent tracks and lyrics for the currently playing song. It's built on a Lumen framework!
 
-## Official Documentation
+## Lumen Documentation
 
 Documentation for the framework can be found on the [Lumen website](https://lumen.laravel.com/docs).
 
-## Security Vulnerabilities
+## Requirements
 
-If you discover a security vulnerability within Lumen, please send an e-mail to Taylor Otwell at taylor@laravel.com. All security vulnerabilities will be promptly addressed.
+PHP >= 7.1.3, OpenSSL PHP Extension, PDO PHP Extension, Mbstring PHP Extension, Curl PHP Extension
 
-## License
 
-The Lumen framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+## Installation and configuration
+
+Clone the repository and set all important variables in ".env". An example settings file can be found in ".env.example"
+
+## Usage
+![Preview1](./demo.gif)
