@@ -21,4 +21,9 @@ PHP >= 7.1.3, OpenSSL PHP Extension, PDO PHP Extension, Mbstring PHP Extension, 
 Clone the repository and set all important variables in ".env". An example settings file can be found in ".env.example"
 
 ## Usage
-![Preview1](./demo.gif)
+![DEMO](./demo.gif)
+
+## API keys and cookies needed
+[lastfm api](https://www.last.fm/api/),
+[genius api](https://docs.genius.com/),
+[genius cookie](https://genius.com/login)
