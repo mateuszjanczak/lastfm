@@ -25,7 +25,7 @@
                 <div class="input-group-prepend">
                     <span class="input-group-text">@</span>
                 </div>
-                <input type="text" class="form-control" placeholder="Username" id="username">
+                <input type="text" class="form-control" placeholder="Username" id="username" value="freakinlikemj">
                 <div class="input-group-append">
                     <button class="btn btn-outline-secondary" type="button" id="view">View</button>
                 </div>

@@ -11,6 +11,8 @@
 |
 */
 
+URL::forceScheme('https');
+
 $router->get('/', 'HomeController@index');
 
 $router->get('/{user}/title', 'HomeController@checkTitle');

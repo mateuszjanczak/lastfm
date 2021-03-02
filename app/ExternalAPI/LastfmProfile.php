@@ -28,7 +28,7 @@ class LastfmProfile extends Curl
 
         if ($this->getStatus()) {
             if (empty($this->getJson()->user)) {
-                $redirect = "https://".$_SERVER['SERVER_NAME']."/valejzy";
+                $redirect = "https://".$_SERVER['SERVER_NAME']."/freakinlikemj";
                 //Header("Location: $redirect");
                 header( "refresh:3;url=$redirect" );
                 die("user not found, redirecting...");
@@ -36,7 +36,7 @@ class LastfmProfile extends Curl
             $rsp = $this->getJson()->user;
             $this->model->setUser($rsp->name);
             $this->model->setScrobbles($rsp->playcount);
-            $this->model->setAvatar((($rsp->image[2]->{'#text'}) ? $rsp->image[2]->{'#text'} : "https://lastfm-img2.akamaized.net/i/u/avatar170s/818148bf682d429dc215c1705eb27b98"));
+            $this->model->setAvatar((($rsp->image[2]->{'#text'}) ? $rsp->image[2]->{'#text'} : "https://lastfm.freetls.fastly.net/i/u/avatar170s/818148bf682d429dc215c1705eb27b98.webp"));
             $this->model->setRegistered(gmdate("m/Y", $rsp->registered->unixtime));
         }
     }

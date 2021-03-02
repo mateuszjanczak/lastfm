@@ -15,6 +15,9 @@ Documentation for the framework can be found on the [Lumen website](https://lume
 
 PHP >= 7.1.3, OpenSSL PHP Extension, PDO PHP Extension, Mbstring PHP Extension, Curl PHP Extension, Composer
 
+## Demo
+
+https://mj-lastfm.herokuapp.com/ (wait for heroku to get up)
 
 ## Installation and configuration
 
@@ -26,9 +29,11 @@ composer install
 ```
 
 ## Usage
-![DEMO](./demo.gif)
 
-## API keys and cookies needed
-[lastfm api](https://www.last.fm/api/),
-[genius api](https://docs.genius.com/),
-[genius cookie](https://genius.com/login)
+![PREVIEW](docs/preview.gif)
+
+## API keys and cookies needed (.env)
+
+[LASTFM_API_KEY](https://www.last.fm/api/) |
+[GENIUS_API_KEY](https://docs.genius.com/) |
+[GENIUS_COOKIE](https://genius.com/login)

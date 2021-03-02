@@ -32,7 +32,7 @@ class LastfmRecentTracks extends Curl
             if (isset($rsp->track[0]->{'@attr'}->nowplaying)) {
                 $this->model->setArtist($rsp->track[0]->artist->{'#text'});
                 $this->model->setTrack($rsp->track[0]->name);
-                $this->model->setMiniature((($rsp->track[0]->image[2]->{"#text"}) ? $rsp->track[0]->image[2]->{"#text"} : "https://lastfm-img2.akamaized.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png"));
+                $this->model->setMiniature((($rsp->track[0]->image[2]->{"#text"}) ? $rsp->track[0]->image[2]->{"#text"} : "https://lastfm.freetls.fastly.net/i/u/300x300/4128a6eb29f94943c9d206c08e625904.webp"));
                 $this->model->setScrobblingNow(true);
             }
             $data = array();
@@ -40,7 +40,7 @@ class LastfmRecentTracks extends Curl
                 $temp = array(
                     "artist" => $value->artist->{"#text"},
                     "track" => $value->name,
-                    "miniature" => (($value->image[2]->{"#text"}) ? $value->image[2]->{"#text"} : "https://lastfm-img2.akamaized.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png"),
+                    "miniature" => (($value->image[2]->{"#text"}) ? $value->image[2]->{"#text"} : "https://lastfm.freetls.fastly.net/i/u/300x300/4128a6eb29f94943c9d206c08e625904.webp"),
                     "date" => ((isset($value->date->uts)) ? Time::toTimeAgo($value->date->uts) : "Now")
                 );
                 array_push($data, $temp);
